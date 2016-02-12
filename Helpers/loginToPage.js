@@ -5,7 +5,8 @@ exports.loginPage=function(username,password){
         browser.driver.manage().window().maximize()
         browser.get('http://192.168.1.236/cyberhealth/#/index');
         browser.waitForAngular();
-        element(by.id('modal_trigger')).click();
+        //browser.sleep(2000);
+        element(by.partialLinkText('Login / Register')).click();
 
         element(by.name('username')).sendKeys(username);
         element(by.name('password')).sendKeys(password);
