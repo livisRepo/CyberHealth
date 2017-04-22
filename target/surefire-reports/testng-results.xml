@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="67" started-at="2017-03-10T14:47:29Z" finished-at="2017-03-10T14:47:29Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="67" started-at="2017-03-10T14:47:29Z" finished-at="2017-03-10T14:47:29Z">
+      <class name="STTA.CyberHealths.AppTest">
+        <test-method status="PASS" signature="testApp()" name="testApp" duration-ms="16" started-at="2017-03-10T20:17:29Z" finished-at="2017-03-10T20:17:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApp -->
+      </class> <!-- STTA.CyberHealths.AppTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

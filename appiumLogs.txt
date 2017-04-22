@@ -1,0 +1,873 @@
+2017-04-20 06:06:31:901 - warn: Appium support for versions of node < 0.12 has been deprecated and will be removed in a future version. Please upgrade!
+2017-04-20 06:06:31:973 - info: Welcome to Appium v1.4.13 (REV c75d8adcb66a75818a542fe1891a34260c21f76a)
+2017-04-20 06:06:31:973 - info: Appium REST http interface listener started on 127.0.0.1:4723
+2017-04-20 06:06:31:975 - info: [debug] Non-default server args: {"address":"127.0.0.1","noReset":true,"log":"D://Livis/Workspace/CyberHealths/CyberHealths/appiumLogs.txt"}
+2017-04-20 06:06:31:975 - info: Console LogLevel: debug
+2017-04-20 06:06:31:975 - info: File LogLevel: debug
+2017-04-20 06:06:43:586 - info: --> POST /wd/hub/session {"capabilities":{"desiredCapabilities":{"appPackage":"com.deemsysinc.cyberhealthapp","appActivity":"com.deemsysinc.cyberhealthapp.authentication.MainActivity","browserName":"Android","platformName":"Android","deviceName":"Android Emulator","version":"6.0"},"requiredCapabilities":{}},"desiredCapabilities":{"appPackage":"com.deemsysinc.cyberhealthapp","appActivity":"com.deemsysinc.cyberhealthapp.authentication.MainActivity","browserName":"Android","platformName":"Android","deviceName":"Android Emulator","version":"6.0"},"requiredCapabilities":{}}
+2017-04-20 06:06:43:588 - info: Client User-Agent string: Apache-HttpClient/4.5.2 (Java/1.8.0_121)
+2017-04-20 06:06:43:589 - info: [debug] The following desired capabilities were provided, but not recognized by appium. They will be passed on to any other services running on this server. : version
+2017-04-20 06:06:43:591 - info: [debug] Didn't get app but did get Android package, will attempt to launch it on the device
+2017-04-20 06:06:43:591 - info: [debug] Creating new appium session 0854f1a0-754b-4b95-9844-68f2d302caaf
+2017-04-20 06:06:43:592 - info: Starting android appium
+2017-04-20 06:06:43:593 - info: [debug] Getting Java version
+2017-04-20 06:06:43:694 - info: Java version is: 1.8.0_121
+2017-04-20 06:06:43:694 - info: [debug] Checking whether adb is present
+2017-04-20 06:06:43:696 - info: [debug] Using adb from D:\Livis\software\Android\android-sdk-windows\platform-tools\adb.exe
+2017-04-20 06:06:43:697 - warn: No app capability, can't parse package/activity
+2017-04-20 06:06:43:697 - info: [debug] Using fast reset? false
+2017-04-20 06:06:43:697 - info: [debug] Preparing device for session
+2017-04-20 06:06:43:697 - info: [debug] Not checking whether app is present since we are assuming it's already on the device
+2017-04-20 06:06:43:697 - info: Retrieving device
+2017-04-20 06:06:43:697 - info: [debug] Trying to find a connected android device
+2017-04-20 06:06:43:698 - info: [debug] Getting connected devices...
+2017-04-20 06:06:43:699 - info: [debug] executing cmd: D:\Livis\software\Android\android-sdk-windows\platform-tools\adb.exe devices
+2017-04-20 06:06:43:720 - info: [debug] 1 device(s) connected
+2017-04-20 06:06:43:720 - info: Found device emulator-5554
+2017-04-20 06:06:43:720 - info: [debug] Setting device id to emulator-5554
+2017-04-20 06:06:43:720 - info: [debug] Waiting for device to be ready and to respond to shell commands (timeout = 5)
+2017-04-20 06:06:43:721 - info: [debug] executing cmd: D:\Livis\software\Android\android-sdk-windows\platform-tools\adb.exe -s emulator-5554 wait-for-device
+2017-04-20 06:06:43:743 - info: [debug] executing cmd: D:\Livis\software\Android\android-sdk-windows\platform-tools\adb.exe -s emulator-5554 shell "echo 'ready'"
+2017-04-20 06:06:43:996 - info: [debug] Starting logcat capture
+2017-04-20 06:06:44:371 - info: [debug] Getting device API level
+2017-04-20 06:06:44:371 - info: [debug] executing cmd: D:\Livis\software\Android\android-sdk-windows\platform-tools\adb.exe -s emulator-5554 shell "getprop ro.build.version.sdk"
+2017-04-20 06:06:44:967 - info: [debug] Device is at API Level 23
+2017-04-20 06:06:44:967 - info: Device API level is: 23
+2017-04-20 06:06:44:967 - info: [debug] Extracting strings for language: default
+2017-04-20 06:06:44:967 - info: [debug] Apk doesn't exist locally
+2017-04-20 06:06:44:967 - info: [debug] Could not get strings, but it looks like we had an old strings file anyway, so ignoring
+2017-04-20 06:06:44:968 - info: [debug] executing cmd: D:\Livis\software\Android\android-sdk-windows\platform-tools\adb.exe -s emulator-5554 shell "rm -rf /data/local/tmp/strings.json"
+2017-04-20 06:06:45:488 - info: [debug] Not uninstalling app since server not started with --full-reset
+2017-04-20 06:06:45:489 - info: [debug] Skipping install since we launched with a package instead of an app path
+2017-04-20 06:06:45:489 - info: [debug] Forwarding system:4724 to device:4724
+2017-04-20 06:06:45:489 - info: [debug] executing cmd: D:\Livis\software\Android\android-sdk-windows\platform-tools\adb.exe -s emulator-5554 forward tcp:4724 tcp:4724
+2017-04-20 06:06:45:522 - info: [debug] Pushing appium bootstrap to device...
+2017-04-20 06:06:45:523 - info: [debug] executing cmd: D:\Livis\software\Android\android-sdk-windows\platform-tools\adb.exe -s emulator-5554 push "C:\\Progra~2\\Appium\\node_modules\\appium\\build\\android_bootstrap\\AppiumBootstrap.jar" /data/local/tmp/
+2017-04-20 06:06:45:615 - info: [debug] Pushing settings apk to device...
+2017-04-20 06:06:45:616 - info: [debug] executing cmd: D:\Livis\software\Android\android-sdk-windows\platform-tools\adb.exe -s emulator-5554 install "C:\Progra~2\Appium\node_modules\appium\build\settings_apk\settings_apk-debug.apk"
+2017-04-20 06:07:02:833 - info: [debug] Pushing unlock helper app to device...
+2017-04-20 06:07:02:833 - info: [debug] executing cmd: D:\Livis\software\Android\android-sdk-windows\platform-tools\adb.exe -s emulator-5554 install "C:\Progra~2\Appium\node_modules\appium\build\unlock_apk\unlock_apk-debug.apk"
+2017-04-20 06:07:09:200 - info: Starting App
+2017-04-20 06:07:09:200 - info: [debug] Attempting to kill all 'uiautomator' processes
+2017-04-20 06:07:09:200 - info: [debug] Getting all processes with 'uiautomator'
+2017-04-20 06:07:09:200 - info: [debug] executing cmd: D:\Livis\software\Android\android-sdk-windows\platform-tools\adb.exe -s emulator-5554 shell "ps 'uiautomator'"
+2017-04-20 06:07:09:487 - info: [debug] No matching processes found
+2017-04-20 06:07:09:487 - info: [debug] Running bootstrap
+2017-04-20 06:07:09:487 - info: [debug] spawning: D:\Livis\software\Android\android-sdk-windows\platform-tools\adb.exe -s emulator-5554 shell uiautomator runtest AppiumBootstrap.jar -c io.appium.android.bootstrap.Bootstrap -e pkg com.deemsysinc.cyberhealthapp -e disableAndroidWatchers false
+2017-04-20 06:07:15:069 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: numtests=1
+2017-04-20 06:07:15:074 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=
+2017-04-20 06:07:15:076 - info: [debug] [UIAUTOMATOR STDOUT] io.appium.android.bootstrap.Bootstrap:
+2017-04-20 06:07:15:082 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+2017-04-20 06:07:15:087 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+2017-04-20 06:07:15:102 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+2017-04-20 06:07:15:105 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: current=1
+2017-04-20 06:07:15:113 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: 1
+2017-04-20 06:07:15:318 - info: [debug] [BOOTSTRAP] [debug] Socket opened on port 4724
+2017-04-20 06:07:15:336 - info: [debug] [BOOTSTRAP] [debug] Appium Socket Server Ready
+2017-04-20 06:07:15:337 - info: [debug] Waking up device if it's not alive
+2017-04-20 06:07:15:338 - info: [debug] Pushing command to appium work queue: ["wake",{}]
+2017-04-20 06:07:15:393 - info: [debug] [BOOTSTRAP] [debug] Loading json...
+2017-04-20 06:07:15:393 - info: [debug] [BOOTSTRAP] [debug] Registered crash watchers.
+2017-04-20 06:07:15:406 - info: [debug] [BOOTSTRAP] [debug] Client connected
+2017-04-20 06:07:15:423 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"wake","params":{}}
+2017-04-20 06:07:15:434 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:07:15:444 - info: [debug] [BOOTSTRAP] [debug] Got command action: wake
+2017-04-20 06:07:15:460 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2017-04-20 06:07:15:482 - info: [debug] executing cmd: D:\Livis\software\Android\android-sdk-windows\platform-tools\adb.exe -s emulator-5554 shell "dumpsys window"
+2017-04-20 06:07:16:391 - info: [debug] Screen already unlocked, continuing.
+2017-04-20 06:07:16:391 - info: [debug] Pushing command to appium work queue: ["getDataDir",{}]
+2017-04-20 06:07:16:413 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"getDataDir","params":{}}
+2017-04-20 06:07:16:413 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:07:16:415 - info: [debug] [BOOTSTRAP] [debug] Got command action: getDataDir
+2017-04-20 06:07:16:436 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"\/data"}
+2017-04-20 06:07:16:450 - info: [debug] dataDir set to: /data
+2017-04-20 06:07:16:451 - info: [debug] Pushing command to appium work queue: ["compressedLayoutHierarchy",{"compressLayout":false}]
+2017-04-20 06:07:16:480 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"compressedLayoutHierarchy","params":{"compressLayout":false}}
+2017-04-20 06:07:16:492 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:07:16:499 - info: [debug] [BOOTSTRAP] [debug] Got command action: compressedLayoutHierarchy
+2017-04-20 06:07:16:542 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":false}
+2017-04-20 06:07:16:564 - info: [debug] Getting device API level
+2017-04-20 06:07:16:565 - info: [debug] executing cmd: D:\Livis\software\Android\android-sdk-windows\platform-tools\adb.exe -s emulator-5554 shell "getprop ro.build.version.sdk"
+2017-04-20 06:07:17:323 - info: [debug] Device is at API Level 23
+2017-04-20 06:07:17:324 - info: [debug] executing cmd: D:\Livis\software\Android\android-sdk-windows\platform-tools\adb.exe -s emulator-5554 shell "am start -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000 -n com.deemsysinc.cyberhealthapp/com.deemsysinc.cyberhealthapp.authentication.MainActivity"
+2017-04-20 06:07:31:720 - info: [debug] Waiting for pkg "com.deemsysinc.cyberhealthapp" and activity "com.deemsysinc.cyberhealthapp.authentication.MainActivity" to be focused
+2017-04-20 06:07:31:721 - info: [debug] Getting focused package and activity
+2017-04-20 06:07:31:721 - info: [debug] executing cmd: D:\Livis\software\Android\android-sdk-windows\platform-tools\adb.exe -s emulator-5554 shell "dumpsys window windows"
+2017-04-20 06:07:33:144 - info: [debug] executing cmd: D:\Livis\software\Android\android-sdk-windows\platform-tools\adb.exe -s emulator-5554 shell "getprop ro.build.version.release"
+2017-04-20 06:07:33:616 - info: [debug] Device is at release version 6.0
+2017-04-20 06:07:33:616 - info: [debug] Device launched! Ready for commands
+2017-04-20 06:07:33:616 - info: [debug] Setting command timeout to the default of 60 secs
+2017-04-20 06:07:33:617 - info: [debug] Appium session started with sessionId 0854f1a0-754b-4b95-9844-68f2d302caaf
+2017-04-20 06:07:33:619 - info: <-- POST /wd/hub/session 303 50032.437 ms - 74 
+2017-04-20 06:07:33:639 - info: --> GET /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf {}
+2017-04-20 06:07:33:640 - info: [debug] Responding to client with success: {"status":0,"value":{"platform":"LINUX","browserName":"Android","platformVersion":"6.0","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"appPackage":"com.deemsysinc.cyberhealthapp","appActivity":"com.deemsysinc.cyberhealthapp.authentication.MainActivity","browserName":"Android","platformName":"Android","deviceName":"Android Emulator","version":"6.0"},"appPackage":"com.deemsysinc.cyberhealthapp","appActivity":"com.deemsysinc.cyberhealthapp.authentication.MainActivity","platformName":"Android","deviceName":"emulator-5554","version":"6.0"},"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:07:33:641 - info: <-- GET /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf 200 2.051 ms - 732 {"status":0,"value":{"platform":"LINUX","browserName":"Android","platformVersion":"6.0","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"appPackage":"com.deemsysinc.cyberhealthapp","appActivity":"com.deemsysinc.cyberhealthapp.authentication.MainActivity","browserName":"Android","platformName":"Android","deviceName":"Android Emulator","version":"6.0"},"appPackage":"com.deemsysinc.cyberhealthapp","appActivity":"com.deemsysinc.cyberhealthapp.authentication.MainActivity","platformName":"Android","deviceName":"emulator-5554","version":"6.0"},"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:07:33:675 - info: --> POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/timeouts {"type":"implicit","ms":25000}
+2017-04-20 06:07:33:678 - info: [debug] Set Android implicit wait to 25000ms
+2017-04-20 06:07:33:678 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:07:33:679 - info: <-- POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/timeouts 200 3.956 ms - 76 {"status":0,"value":null,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:07:33:703 - info: --> POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/log {"type":"logcat"}
+2017-04-20 06:07:33:704 - info: [debug] Responding to client with success: {"status":0,"value":"[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]...","sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:07:33:803 - info: <-- POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/log 200 99.567 ms - 1086787 {"status":0,"value":"[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]...","sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:07:34:512 - info: --> POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element {"using":"name","value":"Signup"}
+2017-04-20 06:07:34:513 - warn: [DEPRECATED] The name locator strategy has been deprecated and will be removed.  Please use the accessibility id locator strategy instead.
+2017-04-20 06:07:34:513 - info: [debug] Waiting up to 25000ms for condition
+2017-04-20 06:07:34:514 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"Signup","context":"","multiple":false}]
+2017-04-20 06:07:34:524 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"Signup","context":"","multiple":false}}
+2017-04-20 06:07:34:543 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:07:34:549 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:07:34:555 - info: [debug] [BOOTSTRAP] [debug] Finding Signup using NAME with the contextId:  multiple: false
+2017-04-20 06:07:34:578 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=Signup, INSTANCE=0]
+2017-04-20 06:07:35:987 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=Signup, INSTANCE=0]
+2017-04-20 06:07:36:574 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"1"}}
+2017-04-20 06:07:36:594 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"1"},"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:07:36:595 - info: <-- POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element 200 2083.714 ms - 87 {"status":0,"value":{"ELEMENT":"1"},"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:07:36:601 - info: --> POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element/1/click {"id":"1"}
+2017-04-20 06:07:36:602 - info: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"1"}]
+2017-04-20 06:07:36:607 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"1"}}
+2017-04-20 06:07:36:615 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:07:36:623 - info: [debug] [BOOTSTRAP] [debug] Got command action: click
+2017-04-20 06:07:37:009 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:07:37:009 - info: <-- POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element/1/click 200 407.718 ms - 76 {"status":0,"value":true,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:07:37:010 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2017-04-20 06:07:37:017 - info: --> POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element {"using":"name","value":"Email Address"}
+2017-04-20 06:07:37:018 - info: [debug] Waiting up to 25000ms for condition
+2017-04-20 06:07:37:018 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"Email Address","context":"","multiple":false}]
+2017-04-20 06:07:37:024 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"Email Address","context":"","multiple":false}}
+2017-04-20 06:07:37:034 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:07:37:057 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:07:37:069 - info: [debug] [BOOTSTRAP] [debug] Finding Email Address using NAME with the contextId:  multiple: false
+2017-04-20 06:07:37:076 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=Email Address, INSTANCE=0]
+2017-04-20 06:07:43:047 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=Email Address, INSTANCE=0]
+2017-04-20 06:07:43:102 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"2"}}
+2017-04-20 06:07:43:114 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"2"},"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:07:43:114 - info: <-- POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element 200 6096.261 ms - 87 {"status":0,"value":{"ELEMENT":"2"},"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:07:43:121 - info: --> POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element/2/value {"id":"2","value":["user19@gmail.com\n"]}
+2017-04-20 06:07:43:122 - info: [debug] Pushing command to appium work queue: ["element:setText",{"elementId":"2","text":"user19@gmail.com\n","replace":false}]
+2017-04-20 06:07:43:127 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"2","text":"user19@gmail.com\n","replace":false}}
+2017-04-20 06:07:43:141 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:07:43:149 - info: [debug] [BOOTSTRAP] [debug] Got command action: setText
+2017-04-20 06:07:43:161 - info: [debug] [BOOTSTRAP] [debug] Using element passed in.
+2017-04-20 06:07:43:221 - info: [debug] [BOOTSTRAP] [debug] Attempting to clear using UiObject.clearText().
+2017-04-20 06:07:46:985 - info: [debug] [BOOTSTRAP] [debug] Text remains after clearing, but it appears to be hint text.
+2017-04-20 06:07:47:088 - info: [debug] [BOOTSTRAP] [debug] Text not cleared. Assuming remainder is hint text.
+2017-04-20 06:07:47:102 - info: [debug] [UIAUTOMATOR STDOUT] [APPIUM-UIAUTO] [debug] Sending plain text to element: user19@gmail.com
+2017-04-20 06:07:47:107 - info: [debug] [UIAUTOMATOR STDOUT] [/APPIUM-UIAUTO]
+2017-04-20 06:07:52:425 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2017-04-20 06:07:52:432 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:07:52:432 - info: <-- POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element/2/value 200 9311.447 ms - 76 {"status":0,"value":true,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:08:07:438 - info: --> POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/elements {"using":"id","value":"com.deemsysinc.cyberhealthapp:id/alertTitle"}
+2017-04-20 06:08:07:438 - info: [debug] Waiting up to 25000ms for condition
+2017-04-20 06:08:07:438 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:07:445 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:07:453 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:07:467 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:07:474 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:07:486 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:07:493 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:07:498 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:07:509 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:07:588 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:07:597 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:07:624 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:07:625 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:07:643 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:07:657 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:07:753 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:07:763 - info: [debug] Waited for 325ms so far
+2017-04-20 06:08:08:263 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:08:277 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:08:280 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:08:281 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:08:281 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:08:281 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:08:303 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:08:308 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:08:313 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:08:367 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:08:374 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:08:387 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:08:398 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:08:417 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:08:421 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:08:486 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:08:502 - info: [debug] Waited for 1064ms so far
+2017-04-20 06:08:09:005 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:09:010 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:09:024 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:09:030 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:09:035 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:09:043 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:09:048 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:09:057 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:09:062 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:09:183 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:09:202 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:09:202 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:09:213 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:09:218 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:09:231 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:09:602 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:09:614 - info: [debug] Waited for 2175ms so far
+2017-04-20 06:08:10:128 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:10:133 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:10:146 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:10:153 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:10:153 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:10:159 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:10:169 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:10:179 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:10:200 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:10:960 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:10:980 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:10:986 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:10:991 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:10:998 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:11:005 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:11:083 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:11:089 - info: [debug] Waited for 3650ms so far
+2017-04-20 06:08:11:594 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:11:599 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:11:613 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:11:616 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:11:620 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:11:631 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:11:648 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:11:652 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:11:661 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:11:736 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:11:745 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:11:768 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:11:777 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:11:794 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:11:800 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:11:882 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:11:890 - info: [debug] Waited for 4452ms so far
+2017-04-20 06:08:12:390 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:12:394 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:12:404 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:12:411 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:12:412 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:12:421 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:12:432 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:12:436 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:12:465 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:12:510 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:12:526 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:12:534 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:12:543 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:12:559 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:12:564 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:12:612 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:12:621 - info: [debug] Waited for 5183ms so far
+2017-04-20 06:08:13:123 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:13:129 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:13:138 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:13:140 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:13:145 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:13:159 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:13:164 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:13:169 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:13:174 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:13:254 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:13:264 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:13:271 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:13:303 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:13:303 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:13:303 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:13:627 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:13:638 - info: [debug] Waited for 6199ms so far
+2017-04-20 06:08:14:138 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:14:144 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:14:148 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:14:151 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:14:161 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:14:164 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:14:174 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:14:179 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:14:192 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:14:572 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:14:577 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:14:589 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:14:597 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:14:612 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:14:617 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:14:703 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:14:721 - info: [debug] Waited for 7283ms so far
+2017-04-20 06:08:15:230 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:15:235 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:15:239 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:15:253 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:15:263 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:15:271 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:15:279 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:15:286 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:15:305 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:15:403 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:15:410 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:15:410 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:15:410 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:15:413 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:15:429 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:15:516 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:15:523 - info: [debug] Waited for 8085ms so far
+2017-04-20 06:08:16:025 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:16:029 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:16:045 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:16:051 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:16:054 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:16:061 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:16:066 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:16:075 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:16:078 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:16:167 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:16:173 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:16:185 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:16:195 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:16:202 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:16:218 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:16:282 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:16:295 - info: [debug] Waited for 8857ms so far
+2017-04-20 06:08:16:805 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:16:814 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:16:850 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:16:857 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:16:857 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:16:864 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:16:865 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:16:865 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:16:865 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:17:312 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:17:322 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:17:330 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:17:339 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:17:351 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:17:356 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:17:404 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:17:418 - info: [debug] Waited for 9980ms so far
+2017-04-20 06:08:17:928 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:17:934 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:17:936 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:17:942 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:17:947 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:17:952 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:17:964 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:17:968 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:17:973 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:18:022 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:18:028 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:18:041 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:18:067 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:18:072 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:18:084 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:18:213 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:18:218 - info: [debug] Waited for 10780ms so far
+2017-04-20 06:08:18:718 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:18:726 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:18:731 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:18:735 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:18:747 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:18:752 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:18:757 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:18:761 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:18:772 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:18:858 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:18:865 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:18:871 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:18:882 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:18:890 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:18:898 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:18:966 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:18:972 - info: [debug] Waited for 11534ms so far
+2017-04-20 06:08:19:473 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:19:479 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:19:484 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:19:495 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:19:512 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:19:523 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:19:528 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:19:533 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:19:536 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:19:611 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:19:613 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:19:613 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:19:614 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:19:615 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:19:615 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:19:723 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:19:735 - info: [debug] Waited for 12297ms so far
+2017-04-20 06:08:20:237 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:20:245 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:20:249 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:20:256 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:20:272 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:20:275 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:20:290 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:20:295 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:20:301 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:20:373 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:20:379 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:20:393 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:20:401 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:20:409 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:20:421 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:20:489 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:20:495 - info: [debug] Waited for 13057ms so far
+2017-04-20 06:08:21:001 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:21:005 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:21:016 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:21:024 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:21:026 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:21:034 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:21:041 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:21:057 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:21:057 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:21:443 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:21:458 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:21:466 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:21:482 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:21:491 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:21:496 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:21:552 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:21:562 - info: [debug] Waited for 14124ms so far
+2017-04-20 06:08:22:062 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:22:069 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:22:080 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:22:082 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:22:082 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:22:082 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:22:111 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:22:141 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:22:141 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:22:232 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:22:249 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:22:263 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:22:283 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:22:288 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:22:304 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:22:562 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:22:574 - info: [debug] Waited for 15136ms so far
+2017-04-20 06:08:23:076 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:23:081 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:23:095 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:23:099 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:23:103 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:23:111 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:23:163 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:23:163 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:23:163 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:23:245 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:23:253 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:23:262 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:23:275 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:23:285 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:23:300 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:23:391 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:23:396 - info: [debug] Waited for 15958ms so far
+2017-04-20 06:08:23:903 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:23:908 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:23:916 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:23:922 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:23:927 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:23:936 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:23:947 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:23:955 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:23:961 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:24:021 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:24:026 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:24:037 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:24:057 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:24:057 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:24:059 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:24:486 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:24:493 - info: [debug] Waited for 17055ms so far
+2017-04-20 06:08:24:995 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:25:000 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:25:005 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:25:010 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:25:027 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:25:038 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:25:054 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:25:067 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:25:069 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:25:471 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:25:476 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:25:486 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:25:495 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:25:503 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:25:511 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:25:592 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:25:603 - info: [debug] Waited for 18165ms so far
+2017-04-20 06:08:26:118 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:26:124 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:26:124 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:26:137 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:26:137 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:26:137 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:26:147 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:26:162 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:26:164 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:26:232 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:26:257 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:26:263 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:26:289 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:26:292 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:26:292 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:26:737 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:26:737 - info: [debug] Waited for 19299ms so far
+2017-04-20 06:08:27:241 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:27:249 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:27:262 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:27:262 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:27:262 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:27:267 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:27:274 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:27:281 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:27:299 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:27:359 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:27:370 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:27:387 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:27:387 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:27:402 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:27:416 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:27:507 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:27:532 - info: [debug] Waited for 20093ms so far
+2017-04-20 06:08:28:037 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:28:043 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:28:048 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:28:067 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:28:080 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:28:091 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:28:099 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:28:104 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:28:115 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:28:203 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:28:209 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:28:223 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:28:232 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:28:237 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:28:245 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:28:313 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:28:324 - info: [debug] Waited for 20885ms so far
+2017-04-20 06:08:28:824 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:28:829 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:28:832 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:28:849 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:28:853 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:28:861 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:28:873 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:28:878 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:28:881 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:28:961 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:28:974 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:28:981 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:28:992 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:28:997 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:29:002 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:29:079 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:29:103 - info: [debug] Waited for 21664ms so far
+2017-04-20 06:08:29:603 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:29:608 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:29:618 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:29:622 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:29:630 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:29:643 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:29:648 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:29:653 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:29:656 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:29:714 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:29:716 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:29:723 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:29:732 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:29:740 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:29:762 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:29:847 - info: [debug] Waited for 22409ms so far
+2017-04-20 06:08:29:847 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:30:363 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:30:368 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:30:379 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:30:379 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:30:379 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:30:379 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:30:387 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:30:393 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:30:393 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:30:466 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:30:476 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:30:485 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:30:494 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:30:508 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:30:514 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:30:572 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:30:577 - info: [debug] Waited for 23139ms so far
+2017-04-20 06:08:31:079 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:31:085 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:31:093 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:31:101 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:31:104 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:31:109 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:31:117 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:31:120 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:31:140 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:31:212 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:31:224 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:31:233 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:31:241 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:31:254 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:31:294 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:31:873 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:31:878 - info: [debug] Waited for 24440ms so far
+2017-04-20 06:08:32:390 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:08:32:398 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:08:32:409 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:32:409 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:32:409 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:32:418 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:32:440 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:32:470 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:32:470 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:32:923 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-04-20 06:08:32:937 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:08:32:938 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:32:948 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:32:960 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:08:32:965 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:08:33:017 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2017-04-20 06:08:33:036 - info: [debug] Condition unmet after 25598ms. Timing out.
+2017-04-20 06:08:33:036 - info: [debug] Responding to client with success: {"status":0,"value":[],"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:08:33:036 - info: <-- POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/elements 200 25597.926 ms - 74 {"status":0,"value":[],"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:08:33:049 - info: --> POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element {"using":"xpath","value":"//android.widget.EditText[@index='1']"}
+2017-04-20 06:08:33:050 - info: [debug] Waiting up to 25000ms for condition
+2017-04-20 06:08:33:050 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"xpath","selector":"//android.widget.EditText[@index='1']","context":"","multiple":false}]
+2017-04-20 06:08:33:065 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.widget.EditText[@index='1']","context":"","multiple":false}}
+2017-04-20 06:08:33:069 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:33:075 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:33:079 - info: [debug] [BOOTSTRAP] [debug] Finding //android.widget.EditText[@index='1'] using XPATH with the contextId:  multiple: false
+2017-04-20 06:08:34:332 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[CLASS=android.widget.EditText, INSTANCE=1]
+2017-04-20 06:08:34:599 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"3"}}
+2017-04-20 06:08:34:615 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"3"},"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:08:34:615 - info: <-- POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element 200 1566.187 ms - 87 {"status":0,"value":{"ELEMENT":"3"},"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:08:34:620 - info: --> GET /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element/3/displayed {}
+2017-04-20 06:08:34:620 - info: [debug] Pushing command to appium work queue: ["element:getAttribute",{"elementId":"3","attribute":"displayed"}]
+2017-04-20 06:08:34:625 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:getAttribute","params":{"elementId":"3","attribute":"displayed"}}
+2017-04-20 06:08:34:631 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:34:634 - info: [debug] [BOOTSTRAP] [debug] Got command action: getAttribute
+2017-04-20 06:08:34:802 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"true"}
+2017-04-20 06:08:34:815 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:08:34:815 - info: <-- GET /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element/3/displayed 200 195.603 ms - 76 {"status":0,"value":true,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:08:34:819 - info: --> POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element {"using":"xpath","value":"//android.widget.EditText[@index='1']"}
+2017-04-20 06:08:34:819 - info: [debug] Waiting up to 25000ms for condition
+2017-04-20 06:08:34:819 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"xpath","selector":"//android.widget.EditText[@index='1']","context":"","multiple":false}]
+2017-04-20 06:08:34:825 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.widget.EditText[@index='1']","context":"","multiple":false}}
+2017-04-20 06:08:34:834 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:34:839 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:34:839 - info: [debug] [BOOTSTRAP] [debug] Finding //android.widget.EditText[@index='1'] using XPATH with the contextId:  multiple: false
+2017-04-20 06:08:35:409 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[CLASS=android.widget.EditText, INSTANCE=1]
+2017-04-20 06:08:35:497 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"4"}}
+2017-04-20 06:08:35:520 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"4"},"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:08:35:520 - info: <-- POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element 200 701.955 ms - 87 {"status":0,"value":{"ELEMENT":"4"},"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:08:35:529 - info: --> POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element/4/value {"id":"4","value":["User\n"]}
+2017-04-20 06:08:35:530 - info: [debug] Pushing command to appium work queue: ["element:setText",{"elementId":"4","text":"User\n","replace":false}]
+2017-04-20 06:08:35:535 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"4","text":"User\n","replace":false}}
+2017-04-20 06:08:35:540 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:35:546 - info: [debug] [BOOTSTRAP] [debug] Got command action: setText
+2017-04-20 06:08:35:560 - info: [debug] [BOOTSTRAP] [debug] Using element passed in.
+2017-04-20 06:08:35:673 - info: [debug] [BOOTSTRAP] [debug] Attempting to clear using UiObject.clearText().
+2017-04-20 06:08:38:909 - info: [debug] [BOOTSTRAP] [debug] Text remains after clearing, but it appears to be hint text.
+2017-04-20 06:08:39:098 - info: [debug] [BOOTSTRAP] [debug] Text not cleared. Assuming remainder is hint text.
+2017-04-20 06:08:39:106 - info: [debug] [UIAUTOMATOR STDOUT] [APPIUM-UIAUTO] [debug] Sending plain text to element: User
+2017-04-20 06:08:39:111 - info: [debug] [UIAUTOMATOR STDOUT] [/APPIUM-UIAUTO]
+2017-04-20 06:08:42:717 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2017-04-20 06:08:42:718 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:08:42:718 - info: <-- POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element/4/value 200 7189.326 ms - 76 {"status":0,"value":true,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:08:42:721 - info: --> POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element {"using":"xpath","value":"//android.widget.EditText[@index='1']"}
+2017-04-20 06:08:42:722 - info: [debug] Waiting up to 25000ms for condition
+2017-04-20 06:08:42:722 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"xpath","selector":"//android.widget.EditText[@index='1']","context":"","multiple":false}]
+2017-04-20 06:08:42:736 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.widget.EditText[@index='1']","context":"","multiple":false}}
+2017-04-20 06:08:42:743 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:42:760 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:42:764 - info: [debug] [BOOTSTRAP] [debug] Finding //android.widget.EditText[@index='1'] using XPATH with the contextId:  multiple: false
+2017-04-20 06:08:43:069 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[CLASS=android.widget.EditText, INSTANCE=1]
+2017-04-20 06:08:43:342 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"5"}}
+2017-04-20 06:08:43:359 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"5"},"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:08:43:359 - info: <-- POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element 200 638.075 ms - 87 {"status":0,"value":{"ELEMENT":"5"},"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:08:43:363 - info: --> POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element/5/click {"id":"5"}
+2017-04-20 06:08:43:363 - info: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"5"}]
+2017-04-20 06:08:43:368 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"5"}}
+2017-04-20 06:08:43:373 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:43:385 - info: [debug] [BOOTSTRAP] [debug] Got command action: click
+2017-04-20 06:08:43:882 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2017-04-20 06:08:43:883 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:08:43:884 - info: <-- POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element/5/click 200 520.868 ms - 76 {"status":0,"value":true,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:08:43:890 - info: --> POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element {"using":"xpath","value":"//android.widget.EditText[@index='1']"}
+2017-04-20 06:08:43:890 - info: [debug] Waiting up to 25000ms for condition
+2017-04-20 06:08:43:890 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"xpath","selector":"//android.widget.EditText[@index='1']","context":"","multiple":false}]
+2017-04-20 06:08:43:908 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.widget.EditText[@index='1']","context":"","multiple":false}}
+2017-04-20 06:08:43:917 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:43:929 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:08:43:945 - info: [debug] [BOOTSTRAP] [debug] Finding //android.widget.EditText[@index='1'] using XPATH with the contextId:  multiple: false
+2017-04-20 06:08:45:240 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[CLASS=android.widget.EditText, INSTANCE=1]
+2017-04-20 06:08:46:048 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"6"}}
+2017-04-20 06:08:46:078 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"6"},"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:08:46:079 - info: <-- POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element 200 2189.104 ms - 87 {"status":0,"value":{"ELEMENT":"6"},"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:08:46:087 - info: --> POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element/6/clear {"id":"6"}
+2017-04-20 06:08:46:087 - info: [debug] Pushing command to appium work queue: ["element:clear",{"elementId":"6"}]
+2017-04-20 06:08:46:105 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:clear","params":{"elementId":"6"}}
+2017-04-20 06:08:46:114 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:08:46:114 - info: [debug] [BOOTSTRAP] [debug] Got command action: clear
+2017-04-20 06:08:46:115 - info: [debug] [BOOTSTRAP] [debug] Attempting to clear using UiObject.clearText().
+2017-04-20 06:08:50:328 - info: [debug] [BOOTSTRAP] [debug] Clearing text not successful. Attempting to clear by selecting all and deleting.
+2017-04-20 06:08:57:516 - info: [debug] [BOOTSTRAP] [debug] Clearing text not successful. Attempting to clear by sending delete keys.
+2017-04-20 06:09:07:107 - info: [debug] [BOOTSTRAP] [debug] Text remains after clearing, but it appears to be hint text.
+2017-04-20 06:09:07:117 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2017-04-20 06:09:07:126 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:09:07:127 - info: <-- POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element/6/clear 200 21038.868 ms - 76 {"status":0,"value":true,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:09:07:129 - info: --> POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/appium/device/hide_keyboard {}
+2017-04-20 06:09:07:131 - info: [debug] executing cmd: D:\Livis\software\Android\android-sdk-windows\platform-tools\adb.exe -s emulator-5554 shell "dumpsys input_method"
+2017-04-20 06:09:08:410 - info: [debug] Pushing command to appium work queue: ["pressBack"]
+2017-04-20 06:09:08:418 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+2017-04-20 06:09:08:418 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:09:08:418 - info: [debug] [BOOTSTRAP] [debug] Got command action: pressBack
+2017-04-20 06:09:08:657 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2017-04-20 06:09:08:657 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:09:08:658 - info: <-- POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/appium/device/hide_keyboard 200 1528.383 ms - 76 {"status":0,"value":true,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:09:08:661 - info: --> POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element {"using":"xpath","value":"//android.widget.EditText[@index='2']"}
+2017-04-20 06:09:08:661 - info: [debug] Waiting up to 25000ms for condition
+2017-04-20 06:09:08:661 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"xpath","selector":"//android.widget.EditText[@index='2']","context":"","multiple":false}]
+2017-04-20 06:09:08:682 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.widget.EditText[@index='2']","context":"","multiple":false}}
+2017-04-20 06:09:08:691 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:09:08:707 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:09:08:710 - info: [debug] [BOOTSTRAP] [debug] Finding //android.widget.EditText[@index='2'] using XPATH with the contextId:  multiple: false
+2017-04-20 06:09:09:180 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[CLASS=android.widget.EditText, INSTANCE=2]
+2017-04-20 06:09:09:377 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"7"}}
+2017-04-20 06:09:09:390 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"7"},"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:09:09:391 - info: <-- POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element 200 730.331 ms - 87 {"status":0,"value":{"ELEMENT":"7"},"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:09:09:395 - info: --> POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element/7/value {"id":"7","value":[" Nineteen\n"]}
+2017-04-20 06:09:09:395 - info: [debug] Pushing command to appium work queue: ["element:setText",{"elementId":"7","text":" Nineteen\n","replace":false}]
+2017-04-20 06:09:09:404 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"7","text":" Nineteen\n","replace":false}}
+2017-04-20 06:09:09:409 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:09:09:423 - info: [debug] [BOOTSTRAP] [debug] Got command action: setText
+2017-04-20 06:09:09:427 - info: [debug] [BOOTSTRAP] [debug] Using element passed in.
+2017-04-20 06:09:09:489 - info: [debug] [BOOTSTRAP] [debug] Attempting to clear using UiObject.clearText().
+2017-04-20 06:09:12:643 - info: [debug] [BOOTSTRAP] [debug] Text remains after clearing, but it appears to be hint text.
+2017-04-20 06:09:12:727 - info: [debug] [BOOTSTRAP] [debug] Text not cleared. Assuming remainder is hint text.
+2017-04-20 06:09:12:732 - info: [debug] [UIAUTOMATOR STDOUT] [APPIUM-UIAUTO] [debug] Sending plain text to element:  Nineteen
+2017-04-20 06:09:12:742 - info: [debug] [UIAUTOMATOR STDOUT] [/APPIUM-UIAUTO]
+2017-04-20 06:09:16:871 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2017-04-20 06:09:16:871 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:09:16:871 - info: <-- POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element/7/value 200 7476.792 ms - 76 {"status":0,"value":true,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:09:16:888 - info: --> POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element {"using":"xpath","value":"//android.widget.EditText[@index='3']"}
+2017-04-20 06:09:16:888 - info: [debug] Waiting up to 25000ms for condition
+2017-04-20 06:09:16:888 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"xpath","selector":"//android.widget.EditText[@index='3']","context":"","multiple":false}]
+2017-04-20 06:09:16:897 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.widget.EditText[@index='3']","context":"","multiple":false}}
+2017-04-20 06:09:16:904 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:09:16:911 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:09:16:916 - info: [debug] [BOOTSTRAP] [debug] Finding //android.widget.EditText[@index='3'] using XPATH with the contextId:  multiple: false
+2017-04-20 06:09:17:229 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[CLASS=android.widget.EditText, INSTANCE=3]
+2017-04-20 06:09:17:503 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"8"}}
+2017-04-20 06:09:17:512 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"8"},"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:09:17:512 - info: <-- POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element 200 624.675 ms - 87 {"status":0,"value":{"ELEMENT":"8"},"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:09:17:523 - info: --> POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element/8/value {"id":"8","value":["User@123\n"]}
+2017-04-20 06:09:17:523 - info: [debug] Pushing command to appium work queue: ["element:setText",{"elementId":"8","text":"User@123\n","replace":false}]
+2017-04-20 06:09:17:540 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"8","text":"User@123\n","replace":false}}
+2017-04-20 06:09:17:550 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:09:17:560 - info: [debug] [BOOTSTRAP] [debug] Got command action: setText
+2017-04-20 06:09:17:566 - info: [debug] [BOOTSTRAP] [debug] Using element passed in.
+2017-04-20 06:09:17:629 - info: [debug] [BOOTSTRAP] [debug] Attempting to clear using UiObject.clearText().
+2017-04-20 06:09:21:343 - info: [debug] [UIAUTOMATOR STDOUT] [APPIUM-UIAUTO] [debug] Sending plain text to element: User@123
+2017-04-20 06:09:21:350 - info: [debug] [UIAUTOMATOR STDOUT] [/APPIUM-UIAUTO]
+2017-04-20 06:09:25:706 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2017-04-20 06:09:25:707 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:09:25:708 - info: <-- POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element/8/value 200 8183.924 ms - 76 {"status":0,"value":true,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:09:25:714 - info: --> POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element {"using":"xpath","value":"//android.widget.EditText[@index='4']"}
+2017-04-20 06:09:25:715 - info: [debug] Waiting up to 25000ms for condition
+2017-04-20 06:09:25:715 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"xpath","selector":"//android.widget.EditText[@index='4']","context":"","multiple":false}]
+2017-04-20 06:09:25:722 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.widget.EditText[@index='4']","context":"","multiple":false}}
+2017-04-20 06:09:25:737 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:09:25:741 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:09:25:748 - info: [debug] [BOOTSTRAP] [debug] Finding //android.widget.EditText[@index='4'] using XPATH with the contextId:  multiple: false
+2017-04-20 06:09:26:425 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[CLASS=android.widget.EditText, INSTANCE=4]
+2017-04-20 06:09:26:654 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"9"}}
+2017-04-20 06:09:26:667 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"9"},"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:09:26:667 - info: <-- POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element 200 952.859 ms - 87 {"status":0,"value":{"ELEMENT":"9"},"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:09:26:670 - info: --> POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element/9/value {"id":"9","value":["User@123\n"]}
+2017-04-20 06:09:26:670 - info: [debug] Pushing command to appium work queue: ["element:setText",{"elementId":"9","text":"User@123\n","replace":false}]
+2017-04-20 06:09:26:698 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"9","text":"User@123\n","replace":false}}
+2017-04-20 06:09:26:705 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:09:26:716 - info: [debug] [BOOTSTRAP] [debug] Got command action: setText
+2017-04-20 06:09:26:724 - info: [debug] [BOOTSTRAP] [debug] Using element passed in.
+2017-04-20 06:09:26:814 - info: [debug] [BOOTSTRAP] [debug] Attempting to clear using UiObject.clearText().
+2017-04-20 06:09:29:612 - info: [debug] [UIAUTOMATOR STDOUT] [APPIUM-UIAUTO] [debug] Sending plain text to element: User@123
+2017-04-20 06:09:29:621 - info: [debug] [UIAUTOMATOR STDOUT] [/APPIUM-UIAUTO]
+2017-04-20 06:09:33:940 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:09:33:940 - info: <-- POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element/9/value 200 7270.617 ms - 76 {"status":0,"value":true,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:09:33:941 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2017-04-20 06:09:33:956 - info: --> GET /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/screenshot {}
+2017-04-20 06:09:33:957 - info: [debug] executing cmd: D:\Livis\software\Android\android-sdk-windows\platform-tools\adb.exe -s emulator-5554 shell "/system/bin/rm /data/local/tmp/screenshot.png; /system/bin/screencap -p /data/local/tmp/screenshot.png "
+2017-04-20 06:09:52:902 - info: [debug] executing cmd: D:\Livis\software\Android\android-sdk-windows\platform-tools\adb.exe -s emulator-5554 pull /data/local/tmp/screenshot.png "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\appium117320-1188-1jp9ko8.png"
+2017-04-20 06:09:53:010 - info: [debug] Responding to client with success: {"status":0,"value":"iVBORw0KGgoAAAANSUhEUgAAAeAAAAMgCAYAAAD7o7EIAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJzsvXuwZUV1P/5Z3Xufe+/cefOYFwMMbxQEVH6G4ANNyrIM0SJlKsE8JJU/9A8rf4iPxEoZkYqmNOSPlIlJmZSaP4KlYpWYVCXRFCIiftUgw5sBlce8GAYGmGHm3nN2r/X7Y63V3fvcO7wvjHpWwZ17z+ndu3v1eq/V3QRAMIEJTGACE5jABF5SCC/3ACYwgQlMYAIT+FWEiQKewAQmMIEJTOBlgIkCnsAEJjCBCUzgZYCJAp7ABCYwgQlM4GWA5qV4ybJly7BixQoAwP79+3Hw4MGX4rVH7HhijFixYgUef/zxp223evVqPPXUUxiNRi/RyCYwgQlMYAIvFRCWsAp6/fr1uPTSS/Frv/Zr2Lx5MwDgoYcewg9+8ANcffXV2L1791K9+ogez+mnn473v//9uPzyyzEcDhdtMxgMcNVVV+F//ud/8M1vfvMlGdcEJjCBCYzDeeedlx0Wh/379+Puu+/GoUOHXqZR/XLAkingLVu24Ktf/SrOO+88hNCPdDMzfvKTn+B3f/d38fOf/3wpXn9Ej2f16tW47rrrcPHFF2PHjh2HHe+1116L973vfbjxxhuXfEwTmMAEXjq47LLLcMIJJ+CKK64AAHz84x+HSBHFX/rSl3DZZZflzx544AF88YtffE7vOPfcc3HLLbe84LG+8Y1vxKpVq3qfPfHEE7j55ptx4MCBF9z/rzIsiQI++uij8fWvfx1veMMbnrbdDTfcgN/5nd/B3r17X+whHNHjAYD/+q//wic+8Ql8//vfX/T7N7/5zfiXf/kXnHzyyUs+lglMYAIvLXznO9/Bm970JhARAPSUL6D8f9111+W/r7/+elx00UXPuv9zzz0Xmzdvfl7Rs3GPd/ny5Ygx9tqklHDw4EEwMwD1iH/yk58853f9qsOS5IA/8pGPPKOyA4A3...","sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:09:53:017 - info: <-- GET /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/screenshot 200 19060.086 ms - 304902 {"status":0,"value":"iVBORw0KGgoAAAANSUhEUgAAAeAAAAMgCAYAAAD7o7EIAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJzsvXuwZUV1P/5Z3Xufe+/cefOYFwMMbxQEVH6G4ANNyrIM0SJlKsE8JJU/9A8rf4iPxEoZkYqmNOSPlIlJmZSaP4KlYpWYVCXRFCIiftUgw5sBlce8GAYGmGHm3nN2r/X7Y63V3fvcO7wvjHpWwZ17z+ndu3v1eq/V3QRAMIEJTGACE5jABF5SCC/3ACYwgQlMYAIT+FWEiQKewAQmMIEJTOBlgIkCnsAEJjCBCUzgZYCJAp7ABCYwgQlM4GWA5qV4ybJly7BixQoAwP79+3Hw4MGX4rVH7HhijFixYgUef/zxp223evVqPPXUUxiNRi/RyCYwgQlMYAIvFRCWsAp6/fr1uPTSS/Frv/Zr2Lx5MwDgoYcewg9+8ANcffXV2L1791K9+ogez+mnn473v//9uPzyyzEcDhdtMxgMcNVVV+F//ud/8M1vfvMlGdcEJjCBCYzDeeedlx0Wh/379+Puu+/GoUOHXqZR/XLAkingLVu24Ktf/SrOO+88hNCPdDMzfvKTn+B3f/d38fOf/3wpXn9Ej2f16tW47rrrcPHFF2PHjh2HHe+1116L973vfbjxxhuXfEwTmMAEXjq47LLLcMIJJ+CKK64AAHz84x+HSBHFX/rSl3DZZZflzx544AF88YtffE7vOPfcc3HLLbe84LG+8Y1vxKpVq3qfPfHEE7j55ptx4MCBF9z/rzIsiQI++uij8fWvfx1veMMbnrbdDTfcgN/5nd/B3r17X+whHNHjAYD/+q//wic+8Ql8//vfX/T7N7/5zfiXf/kXnHzyyUs+lglMYAIvLXznO9/Bm970JhARAPSUL6D8f9111+W/r7/+elx00UXPuv9zzz0Xmzdvfl7Rs3GPd/ny5Ygx9tqklHDw4EEwMwD1iH/yk58853f9qsOS5IA/8pGPPKOyA4A3...","sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:09:53:092 - info: --> POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element {"using":"name","value":"Next"}
+2017-04-20 06:09:53:092 - info: [debug] Waiting up to 25000ms for condition
+2017-04-20 06:09:53:092 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"Next","context":"","multiple":false}]
+2017-04-20 06:09:53:100 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"Next","context":"","multiple":false}}
+2017-04-20 06:09:53:116 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:09:53:126 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:09:53:129 - info: [debug] [BOOTSTRAP] [debug] Finding Next using NAME with the contextId:  multiple: false
+2017-04-20 06:09:53:136 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=Next, INSTANCE=0]
+2017-04-20 06:09:53:207 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=Next, INSTANCE=0]
+2017-04-20 06:09:53:276 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"10"}}
+2017-04-20 06:09:53:283 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"10"},"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:09:53:283 - info: <-- POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element 200 191.558 ms - 88 {"status":0,"value":{"ELEMENT":"10"},"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:09:53:287 - info: --> POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element/10/click {"id":"10"}
+2017-04-20 06:09:53:287 - info: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"10"}]
+2017-04-20 06:09:53:294 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"10"}}
+2017-04-20 06:09:53:302 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:09:53:314 - info: [debug] [BOOTSTRAP] [debug] Got command action: click
+2017-04-20 06:09:53:606 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2017-04-20 06:09:53:609 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:09:53:609 - info: <-- POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/element/10/click 200 322.791 ms - 76 {"status":0,"value":true,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:09:53:612 - info: --> POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/elements {"using":"id","value":"com.deemsysinc.cyberhealthapp:id/alertTitle"}
+2017-04-20 06:09:53:613 - info: [debug] Waiting up to 25000ms for condition
+2017-04-20 06:09:53:613 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}]
+2017-04-20 06:09:53:626 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.deemsysinc.cyberhealthapp:id/alertTitle","context":"","multiple":true}}
+2017-04-20 06:09:53:820 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-20 06:09:53:848 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-20 06:09:53:849 - info: [debug] [BOOTSTRAP] [debug] Finding com.deemsysinc.cyberhealthapp:id/alertTitle using ID with the contextId:  multiple: true
+2017-04-20 06:09:53:877 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:09:53:879 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:09:53:879 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2017-04-20 06:09:53:893 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:09:55:237 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (1)
+2017-04-20 06:09:55:263 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.deemsysinc.cyberhealthapp:id/alertTitle]
+2017-04-20 06:09:55:359 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"11"}]}
+2017-04-20 06:09:55:375 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"11"}],"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:09:55:376 - info: <-- POST /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf/elements 200 1763.544 ms - 90 {"status":0,"value":[{"ELEMENT":"11"}],"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:10:00:748 - info: --> DELETE /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf {}
+2017-04-20 06:10:00:748 - info: Shutting down appium session
+2017-04-20 06:10:00:748 - info: [debug] Pressing the HOME button
+2017-04-20 06:10:00:749 - info: [debug] executing cmd: D:\Livis\software\Android\android-sdk-windows\platform-tools\adb.exe -s emulator-5554 shell "input keyevent 3"
+2017-04-20 06:10:16:087 - info: [debug] Stopping logcat capture
+2017-04-20 06:10:16:089 - info: [debug] Logcat terminated with code null, signal SIGTERM
+2017-04-20 06:10:16:225 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"shutdown"}
+2017-04-20 06:10:16:225 - info: [debug] [BOOTSTRAP] [debug] Got command of type SHUTDOWN
+2017-04-20 06:10:16:225 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+2017-04-20 06:10:16:227 - info: [debug] Sent shutdown command, waiting for UiAutomator to stop...
+2017-04-20 06:10:16:280 - info: [debug] [BOOTSTRAP] [debug] Closed client connection
+2017-04-20 06:10:16:335 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: numtests=1
+2017-04-20 06:10:16:352 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=.
+2017-04-20 06:10:16:382 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+2017-04-20 06:10:16:382 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+2017-04-20 06:10:16:382 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+2017-04-20 06:10:16:400 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: current=1
+2017-04-20 06:10:16:402 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+2017-04-20 06:10:16:551 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=
+2017-04-20 06:10:16:664 - info: [debug] [UIAUTOMATOR STDOUT] Test results for WatcherResultPrinter=.
+2017-04-20 06:10:16:670 - info: [debug] [UIAUTOMATOR STDOUT] Time: 181.653
+2017-04-20 06:10:16:670 - info: [debug] [UIAUTOMATOR STDOUT] OK (1 test)
+2017-04-20 06:10:16:670 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+2017-04-20 06:10:17:560 - info: [debug] UiAutomator shut down normally
+2017-04-20 06:10:17:560 - info: [debug] Cleaning up android objects
+2017-04-20 06:10:17:560 - info: [debug] Cleaning up appium session
+2017-04-20 06:10:17:560 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
+2017-04-20 06:10:17:561 - info: <-- DELETE /wd/hub/session/0854f1a0-754b-4b95-9844-68f2d302caaf 200 16813.187 ms - 76 {"status":0,"value":null,"sessionId":"0854f1a0-754b-4b95-9844-68f2d302caaf"}
